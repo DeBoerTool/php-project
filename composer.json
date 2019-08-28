@@ -27,17 +27,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Dbt\\PhpProject\\": "src"
+            "Dbt\\PhpProject\\": "Source"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dbt\\PhpProject\\Tests\\": "tests"
+            "Dbt\\PhpProject\\Tests\\": "Tests"
         }
     },
     "scripts": {
         "test": "phpunit --no-coverage",
-        "test-coverage": "phpunit --coverage-html coverage",
+        "test-coverage": "phpunit --coverage-html Reports/coverage",
         "pcov": "php -d pcov.enabled=1 vendor/phpunit/phpunit/phpunit --coverage-html Reports/coverage",
         "stat": "psalm"
     },
